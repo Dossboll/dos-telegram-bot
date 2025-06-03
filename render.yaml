@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dos-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python dos_bot_render.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
